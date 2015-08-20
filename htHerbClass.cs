@@ -101,7 +101,7 @@ $htGlobal = ht.getId();
 
 function htSortInventories()
 {
-  echo"test");
+  echo("test");
   $htGlobal.sortInventories();
 }
 
