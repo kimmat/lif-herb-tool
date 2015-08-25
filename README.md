@@ -4,8 +4,8 @@ Herbalism tool for Life is Feudal computer game
 ## Installation
 
 * Place the files in the directory mod/lif-herb-tool/ under the game root directory.
-* Write the following command in the console after the game starts
-   exec("mod//lif-herb-tool/init.cs");
+* Add the following line in the file script/client/init.cs. It should be tha last line in the function "loadAllGuiProperty()" (around line 454).
+   exec("mod/lif-herb-tool/init.cs");
    
 ## Usage
 
