@@ -14,6 +14,17 @@ function htHerb::isThisHerb(%this, %filename)
   return endsWith(%filename, %this.imageFilename, false);
 }
 
+function htHerb::getEffectId(%this, %i)
+{
+  if ( %i <= 0 || %i > 3 )
+  {
+    echo("Herbs have three effects, use %i = {1,2,3}");
+
+    return -1;
+  }
+
+  return effect[%i+1];
+}
 
 // HerbTool class functions
 function HerbTool::onAdd(%this)
@@ -37,6 +48,30 @@ function HerbTool::getHerbId(%this, %filename)
   }
   
   return -1;
+}
+
+function HerbTool::getEffect(%this, %effectNo, %herbId)
+{
+  %effectId = %herbId.getEffectId(%effectNo);
+
+  if ( %effectId < 0 || % effectId > %this.effectCount )
+  {
+    return "Unknown";
+  }
+
+  return %this.effect[%effectId];
+}
+
+function HerbTool::getEffect(%this, %effectNo, %herbId)
+{
+  %effectId = %herbId.getEffectId(%effectNo);
+
+  if ( %effectId < 0 || % effectId > %this.effectCount )
+  {
+    return "Unknown";
+  }
+
+  return %this.effectShort[%effectId];
 }
 
 function HerbTool::sortInventories(%this)
@@ -96,13 +131,3 @@ function HerbTool::sortHerb(%this, %herbId, %invItem, %stackCount)
   
   %invItem.position = %pos;
 }
-
-$htGlobal = ht.getId();
-
-function htSortInventories()
-{
-  echo("test");
-  $htGlobal.sortInventories();
-}
-
-GlobalActionMap.bindObj(keyboard, "ctrl s","sortInventories", $htGlobal);

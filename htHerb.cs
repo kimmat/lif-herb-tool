@@ -1,10 +1,53 @@
-﻿// Generated automatically from objects_types.xml
+// Generated automatically from objects_types.xml
 // Includes all types with ParentID = 666
 
 
 new ScriptObject(ht)
 {
-  class = HerbTool;
+  class = htHerbTool;
+
+  // From https://docs.google.com/spreadsheets/d/1cugzfMB3QiYz8uzvbgX3A1r2Nho0TBWf9dAuUu-VxtY/edit?pli=1#gid=0
+  effect[0] = "Restore soft HP";
+  effect[1] = "Restore hard stamina";
+  effect[2] = "Flux";
+  effect[3] = "Drink/food flavour (spice)";
+  effect[4] = "Antidote";
+  effect[5] = "Raise maximum soft stamina (temp)";
+  effect[6] = "Raise Str (temp)";
+  effect[7] = "Raise Agi (temp)";
+  effect[8] = "Raise Will (temp)";
+  effect[9] = "Raise Int (temp)";
+  effect[10] = "Raise Con (temp)";
+  effect[11] = "Naphtha";
+  effect[12] = "Damage soft HP";
+  effect[13] = "Damage hard stamina";
+  effect[14] = "Damage hard HP";
+  effect[15] = "Damage soft stamina regen";
+  effect[16] = "Lowers maximum soft HP (temp)";
+  effect[17] = "Lowers maximum soft stamina (temp)";
+  effect[0] = "Restore soft HP";
+
+  effectShort[0] = "Restore sHP";
+  effectShort[1] = "Restore hStam";
+  effectShort[2] = "Flux";
+  effectShort[3] = "Flavour";
+  effectShort[4] = "Antidote";
+  effectShort[5] = "Raise max sStam";
+  effectShort[6] = "Raise Str";
+  effectShort[7] = "Raise Agi";
+  effectShort[8] = "Raise Will";
+  effectShort[9] = "Raise Int";
+  effectShort[10] = "Raise Con";
+  effectShort[11] = "Naphtha";
+  effectShort[12] = "Dmg sHP";
+  effectShort[13] = "Dmg hStam";
+  effectShort[14] = "Dmg hHP";
+  effectShort[15] = "Dmg sStam regen";
+  effectShort[16] = "Lowers max sHP";
+  effectShort[17] = "Lowers max sStam";
+
+  effectCount = 18;
+
   herb[0] = new ScriptObject(htHerbPitakuKoro)
   {
     class = htHerb;
@@ -14,12 +57,9 @@ new ScriptObject(ht)
     gameId = 684;
     imageFilename = "pitaku_koro.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[1] = new ScriptObject(htHerbAlbusViduae)
@@ -31,12 +71,9 @@ new ScriptObject(ht)
     gameId = 685;
     imageFilename = "albus_viduae.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[2] = new ScriptObject(htHerbAureusMagistrum)
@@ -48,12 +85,9 @@ new ScriptObject(ht)
     gameId = 686;
     imageFilename = "aureus_magistrum.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[3] = new ScriptObject(htHerbSapientaMantis)
@@ -65,12 +99,9 @@ new ScriptObject(ht)
     gameId = 687;
     imageFilename = "sapienta_mantis.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[4] = new ScriptObject(htHerbNocteLumen)
@@ -82,12 +113,9 @@ new ScriptObject(ht)
     gameId = 688;
     imageFilename = "nocte_lumen.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[5] = new ScriptObject(htHerbChoreaIram)
@@ -99,12 +127,9 @@ new ScriptObject(ht)
     gameId = 689;
     imageFilename = "chorea_iram.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[6] = new ScriptObject(htHerbDesertusSmilax)
@@ -116,12 +141,9 @@ new ScriptObject(ht)
     gameId = 690;
     imageFilename = "desertus_smilax.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[7] = new ScriptObject(htHerbPungentibusChorea)
@@ -133,12 +155,9 @@ new ScriptObject(ht)
     gameId = 691;
     imageFilename = "pungentibus_chorea.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[8] = new ScriptObject(htHerbMonsBastardus)
@@ -150,12 +169,9 @@ new ScriptObject(ht)
     gameId = 692;
     imageFilename = "mons_bastardus.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[9] = new ScriptObject(htHerbFiliaPrati)
@@ -167,12 +183,9 @@ new ScriptObject(ht)
     gameId = 693;
     imageFilename = "filia_prati.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[10] = new ScriptObject(htHerbAdipemNebulo)
@@ -184,12 +197,9 @@ new ScriptObject(ht)
     gameId = 694;
     imageFilename = "adipem_nebulo.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[11] = new ScriptObject(htHerbRosaKingsa)
@@ -201,12 +211,9 @@ new ScriptObject(ht)
     gameId = 695;
     imageFilename = "rosa_kingsa.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[12] = new ScriptObject(htHerbBacceHamsa)
@@ -218,12 +225,9 @@ new ScriptObject(ht)
     gameId = 696;
     imageFilename = "bacce_hamsa.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[13] = new ScriptObject(htHerbSuryodayabhagya)
@@ -235,12 +239,9 @@ new ScriptObject(ht)
     gameId = 697;
     imageFilename = "suryodaya_bhagya.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[14] = new ScriptObject(htHerbSaltareDiabolus)
@@ -252,12 +253,9 @@ new ScriptObject(ht)
     gameId = 698;
     imageFilename = "saltare_diabolus.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[15] = new ScriptObject(htHerbKurupaAndhere)
@@ -269,12 +267,9 @@ new ScriptObject(ht)
     gameId = 699;
     imageFilename = "kurupa_andhere.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[16] = new ScriptObject(htHerbTopasaMaidana)
@@ -286,12 +281,9 @@ new ScriptObject(ht)
     gameId = 700;
     imageFilename = "topasa_maidana.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[17] = new ScriptObject(htHerbRaktaStema)
@@ -303,12 +295,9 @@ new ScriptObject(ht)
     gameId = 701;
     imageFilename = "rakta_stema.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[18] = new ScriptObject(htHerbPhlavarPharest)
@@ -320,12 +309,9 @@ new ScriptObject(ht)
     gameId = 702;
     imageFilename = "phlavar_pharest.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[19] = new ScriptObject(htHerbMaunaBoba)
@@ -337,12 +323,9 @@ new ScriptObject(ht)
     gameId = 703;
     imageFilename = "mauna_boba.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[20] = new ScriptObject(htHerbFalcemMalleorum)
@@ -354,12 +337,9 @@ new ScriptObject(ht)
     gameId = 704;
     imageFilename = "falcem_malleorum.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[21] = new ScriptObject(htHerbCurailaJangha)
@@ -371,12 +351,9 @@ new ScriptObject(ht)
     gameId = 705;
     imageFilename = "curaila_jangha.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[22] = new ScriptObject(htHerbAquilaPeccatum)
@@ -388,12 +365,9 @@ new ScriptObject(ht)
     gameId = 706;
     imageFilename = "aquila_peccatum.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[23] = new ScriptObject(htHerbNequissimumPropodium)
@@ -405,12 +379,9 @@ new ScriptObject(ht)
     gameId = 707;
     imageFilename = "nequissimum_propodium.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[24] = new ScriptObject(htHerbViridiursae)
@@ -422,12 +393,9 @@ new ScriptObject(ht)
     gameId = 708;
     imageFilename = "viridi_ursae.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[25] = new ScriptObject(htHerbMunchaVana)
@@ -439,12 +407,9 @@ new ScriptObject(ht)
     gameId = 709;
     imageFilename = "muncha_vana.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[26] = new ScriptObject(htHerbCaeciCustos)
@@ -456,12 +421,9 @@ new ScriptObject(ht)
     gameId = 710;
     imageFilename = "caeci_custos.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[27] = new ScriptObject(htHerbErrantiaLudaeo)
@@ -473,12 +435,9 @@ new ScriptObject(ht)
     gameId = 711;
     imageFilename = "errantia_ludaeo.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[28] = new ScriptObject(htHerbOscularetur)
@@ -490,12 +449,9 @@ new ScriptObject(ht)
     gameId = 712;
     imageFilename = "oscularetur.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[29] = new ScriptObject(htHerbMalaFugam)
@@ -507,12 +463,9 @@ new ScriptObject(ht)
     gameId = 713;
     imageFilename = "mala_fugam.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[30] = new ScriptObject(htHerbCurvaManus)
@@ -524,12 +477,9 @@ new ScriptObject(ht)
     gameId = 714;
     imageFilename = "curva_manus.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[31] = new ScriptObject(htHerbPecuariusVentus)
@@ -541,12 +491,9 @@ new ScriptObject(ht)
     gameId = 715;
     imageFilename = "pecuarius_ventus.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[32] = new ScriptObject(htHerbPetraStellam)
@@ -558,12 +505,9 @@ new ScriptObject(ht)
     gameId = 716;
     imageFilename = "petra_stellam.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[33] = new ScriptObject(htHerbAcerbaMoretum)
@@ -575,12 +519,9 @@ new ScriptObject(ht)
     gameId = 717;
     imageFilename = "acerba_moretum.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[34] = new ScriptObject(htHerbDulcisRadix)
@@ -592,12 +533,9 @@ new ScriptObject(ht)
     gameId = 718;
     imageFilename = "dulcis_radix.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[35] = new ScriptObject(htHerbKromentaSalicia)
@@ -609,12 +547,9 @@ new ScriptObject(ht)
     gameId = 719;
     imageFilename = "kromenta_salicia.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[36] = new ScriptObject(htHerbVertatoZonda)
@@ -626,12 +561,9 @@ new ScriptObject(ht)
     gameId = 720;
     imageFilename = "vertato_zonda.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[37] = new ScriptObject(htHerbKhalariGratsi)
@@ -643,12 +575,9 @@ new ScriptObject(ht)
     gameId = 721;
     imageFilename = "khalari_gratsi.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[38] = new ScriptObject(htHerbRemertaPoskot)
@@ -660,12 +589,9 @@ new ScriptObject(ht)
     gameId = 722;
     imageFilename = "remerta_poskot.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[39] = new ScriptObject(htHerbHolmatuStazo)
@@ -677,12 +603,9 @@ new ScriptObject(ht)
     gameId = 723;
     imageFilename = "holmatu_stazo.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[40] = new ScriptObject(htHerbKaledaMesgano)
@@ -694,12 +617,9 @@ new ScriptObject(ht)
     gameId = 724;
     imageFilename = "kaleda_mesgano.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[41] = new ScriptObject(htHerbFakhaRudob)
@@ -711,12 +631,9 @@ new ScriptObject(ht)
     gameId = 725;
     imageFilename = "fakha_rudob.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[42] = new ScriptObject(htHerbKacaroVilko)
@@ -728,12 +645,9 @@ new ScriptObject(ht)
     gameId = 726;
     imageFilename = "kacaro_vilko.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[43] = new ScriptObject(htHerbFassariTolge)
@@ -745,12 +659,9 @@ new ScriptObject(ht)
     gameId = 727;
     imageFilename = "fassari_tolge.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[44] = new ScriptObject(htHerbSarmentoGaute)
@@ -762,12 +673,9 @@ new ScriptObject(ht)
     gameId = 728;
     imageFilename = "sarmento_gaute.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[45] = new ScriptObject(htHerbPersetuHara)
@@ -779,12 +687,9 @@ new ScriptObject(ht)
     gameId = 729;
     imageFilename = "persetu_hara.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[46] = new ScriptObject(htHerbHallatraKronye)
@@ -796,12 +701,9 @@ new ScriptObject(ht)
     gameId = 730;
     imageFilename = "hallatra_kronye.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[47] = new ScriptObject(htHerbLasterKutta)
@@ -813,12 +715,9 @@ new ScriptObject(ht)
     gameId = 731;
     imageFilename = "laster_kutta.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[48] = new ScriptObject(htHerbUtrokkaKhuru)
@@ -830,12 +729,9 @@ new ScriptObject(ht)
     gameId = 732;
     imageFilename = "utrokka_khuru.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[49] = new ScriptObject(htHerbKyasagaSherl)
@@ -847,12 +743,9 @@ new ScriptObject(ht)
     gameId = 733;
     imageFilename = "kyasaga_sherl.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[50] = new ScriptObject(htHerbJukolaBeshaar)
@@ -864,12 +757,9 @@ new ScriptObject(ht)
     gameId = 734;
     imageFilename = "jukola_beshaar.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[51] = new ScriptObject(htHerbRipyoteQuamisy)
@@ -881,12 +771,9 @@ new ScriptObject(ht)
     gameId = 735;
     imageFilename = "ripyote_quamisy.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[52] = new ScriptObject(htHerbFuskegtraXelay)
@@ -898,12 +785,9 @@ new ScriptObject(ht)
     gameId = 736;
     imageFilename = "fuskegtra_xelay.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[53] = new ScriptObject(htHerbBurmentaWallo)
@@ -915,12 +799,9 @@ new ScriptObject(ht)
     gameId = 737;
     imageFilename = "burmenta_wallo.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[54] = new ScriptObject(htHerbFohattaTorn)
@@ -932,12 +813,9 @@ new ScriptObject(ht)
     gameId = 738;
     imageFilename = "fohatta_torn.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[55] = new ScriptObject(htHerbDustaliKrabo)
@@ -949,12 +827,9 @@ new ScriptObject(ht)
     gameId = 739;
     imageFilename = "dustali_krabo.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[56] = new ScriptObject(htHerbGratiasSivara)
@@ -966,12 +841,9 @@ new ScriptObject(ht)
     gameId = 740;
     imageFilename = "gratias_sivara.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[57] = new ScriptObject(htHerbMemenAnik)
@@ -983,12 +855,9 @@ new ScriptObject(ht)
     gameId = 741;
     imageFilename = "memen_anik.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[58] = new ScriptObject(htHerbGortakaMessen)
@@ -1000,12 +869,9 @@ new ScriptObject(ht)
     gameId = 742;
     imageFilename = "gortaka_messen.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[59] = new ScriptObject(htHerbKalyaNori)
@@ -1017,12 +883,9 @@ new ScriptObject(ht)
     gameId = 743;
     imageFilename = "kalya_nori.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[60] = new ScriptObject(htHerbUliyaSundara)
@@ -1034,12 +897,9 @@ new ScriptObject(ht)
     gameId = 744;
     imageFilename = "uliya_sundara.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[61] = new ScriptObject(htHerbJenaroVannakam)
@@ -1051,12 +911,9 @@ new ScriptObject(ht)
     gameId = 745;
     imageFilename = "jenaro_vannakam.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[62] = new ScriptObject(htHerbHuryosaGulla)
@@ -1068,12 +925,9 @@ new ScriptObject(ht)
     gameId = 746;
     imageFilename = "huryosa_gulla.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[63] = new ScriptObject(htHerbItalIranta)
@@ -1085,12 +939,9 @@ new ScriptObject(ht)
     gameId = 747;
     imageFilename = "ital_iranta.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[64] = new ScriptObject(htHerbMurkhaBola)
@@ -1102,12 +953,9 @@ new ScriptObject(ht)
     gameId = 748;
     imageFilename = "murkha_bola.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herb[65] = new ScriptObject(htHerbNaraenPandanomo)
@@ -1119,12 +967,9 @@ new ScriptObject(ht)
     gameId = 750;
     imageFilename = "naraen_pandanomo.png";
 
-    produceFlux = false;
-    produceNaptha = false;
-    produceFlavor = false;
-    effect1 = "Unknown";
-    effect2 = "Unknown";
-    effect3 = "Unknown";
+    effect[0] = -1;
+    effect[1] = -1;
+    effect[2] = -1;
   };
 
   herbCount = 66;
